@@ -93,17 +93,11 @@ sudo apt install python3 python3-pip python3-venv python3-full -y
 Se estiver usando GitHub:
 
 ```bash
-git clone https://github.com/seu-usuario/conecta-campus.git
+git clone https://github.com/felype2222/conecta-campus.git
 cd conecta-campus/servidor_flask
 ```
 
 Se você baixou o projeto em ZIP, extraia o arquivo e entre na pasta `servidor_flask`.
-
-Exemplo no WSL, usando um caminho do Windows:
-
-```bash
-cd /mnt/c/Users/Home/OneDrive/Documentos/projeto4/servidor_flask
-```
 
 ---
 
