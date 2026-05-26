@@ -1,0 +1,18 @@
+html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#06152e;font-family:Arial,Helvetica,sans-serif}
+
+/* Player igual à pré-visualização: conteúdo inteiro visível e barra fora da imagem. */
+#screen{position:fixed;left:0;right:0;top:0;bottom:82px;background:#06152e;display:flex;align-items:center;justify-content:center;overflow:hidden}
+
+/* Imagem/vídeo se ajusta automaticamente ao tamanho da tela, sem cortar e sem distorcer. */
+.slide-media{max-width:100%!important;max-height:100%!important;width:100%!important;height:100%!important;display:block;background:#06152e;object-fit:contain!important;object-position:center center}
+#screen video.slide-media{background:#000}
+#empty{color:white;font-size:42px;display:grid;place-items:center;height:100%;width:100%}
+
+/* Barra inferior separada do slide para não ficar por cima da mídia. */
+.bottom{position:fixed;left:0;right:0;bottom:0;height:82px;background:#06152ef5;color:white;padding:10px 54px 12px 54px;box-sizing:border-box;z-index:10;box-shadow:0 -4px 20px #0006}
+.ticker{display:flex;gap:22px;font-size:18px;line-height:24px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ticker strong{color:#2f91ff}
+.bar{position:absolute;left:54px;right:170px;bottom:14px;height:7px;background:#ffffff35;border-radius:20px;overflow:hidden}
+#progress{height:100%;background:#2f91ff;width:0}
+
+@media(max-width:900px){#screen{bottom:70px}.bottom{height:70px;padding:8px 28px}.ticker{font-size:14px;line-height:20px}.bar{left:28px;right:28px;bottom:12px;height:6px}}
