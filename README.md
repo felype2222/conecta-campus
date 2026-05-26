@@ -1,3 +1,8 @@
+<div align="center">
+  <img src="assets/banner.jpeg" alt="Banner Conecta Campus" width="100%">
+</div>
+<br>
+
 # Conecta Campus
 
 Plataforma de Digital Signage para comunicação institucional universitária, criada para exibir editais, avisos, eventos, comunicados e mídias em telas espalhadas pelo campus.
@@ -118,3 +123,12 @@ O projeto incentiva o reaproveitamento de TV Boxes Android, computadores antigos
 - Integração com QR Codes institucionais.
 - Painel com permissões por setor.
 - Uso com domínio e HTTPS.
+
+# Autores
+
+* Yuri Duarte Oliveira dos Santos
+* Guilherme Henrique dos Santos Valente
+* Luis Felype de Souza Macedo
+* Alan Cunha Café
+
+**Orientador:** José Vigno Moura Sousa
