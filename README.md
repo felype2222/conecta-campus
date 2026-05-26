@@ -98,10 +98,10 @@ Ao iniciar, o player realiza automaticamente a busca do servidor Flask na rede l
 
 Após localizar o servidor, o player sincroniza automaticamente:
 
-playlists;
-imagens;
-vídeos;
-conteúdos publicados.
+- playlists;
+- imagens;
+- vídeos;
+- conteúdos publicados.
 
 Essa abordagem facilita a implantação em ambientes institucionais e reduz a necessidade de configuração técnica nos dispositivos clientes.
 
