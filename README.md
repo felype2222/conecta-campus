@@ -86,21 +86,24 @@ Após o primeiro acesso, recomenda-se criar um novo usuário administrativo e al
 
 ## Player
 
-O player pode ser acessado no navegador por:
+O player pode ser acessado no navegador através da rota:
 
 ```text
 /player/conecta_campus
 ```
 
-O aplicativo Android carrega esse endereço dentro de uma WebView. Para usar outro servidor, atualize a constante `url` em `main.dart`.
+O aplicativo Android foi desenvolvido em Flutter utilizando WebView e funciona como terminal de exibição para TVs e monitores conectados.
 
-Exemplo:
+Ao iniciar, o player realiza automaticamente a busca do servidor Flask na rede local, identificando o painel disponível sem necessidade de configuração manual de IP no aplicativo.
 
-```dart
-static const String url = 'http://ENDERECO_DO_SERVIDOR:5000/player/conecta_campus';
-```
+Após localizar o servidor, o player sincroniza automaticamente:
 
-Quando houver domínio institucional, substitua o IP pelo domínio final.
+playlists;
+imagens;
+vídeos;
+conteúdos publicados.
+
+Essa abordagem facilita a implantação em ambientes institucionais e reduz a necessidade de configuração técnica nos dispositivos clientes.
 
 ## Funcionamento
 
