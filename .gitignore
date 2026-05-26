@@ -1,0 +1,9 @@
+# Ambiente virtual do Python
+servidor_flask/venv/
+__pycache__/
+
+# Banco de dados local
+servidor_flask/painel.db
+
+# Uploads de mídia (opcional, para não subir as imagens de teste)
+servidor_flask/media/
