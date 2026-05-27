@@ -152,3 +152,31 @@ O projeto incentiva o reaproveitamento de TV Boxes Android, computadores antigos
 * Alan Cunha Café
 
 **Orientador:** José Vigno Moura Sousa
+
+## Arquitetura Resumida
+
+```mermaid
+flowchart TD
+    %% Estilos das caixas
+    classDef blueBox fill:#e1ebff,stroke:#1e293b,stroke-width:2px,color:#0f172a;
+    classDef whiteBox fill:#ffffff,stroke:#1e293b,stroke-width:2px,color:#0f172a;
+    classDef yellowBox fill:#fef08a,stroke:#1e293b,stroke-width:2px,color:#0f172a;
+    classDef greenBox fill:#dcfce7,stroke:#1e293b,stroke-width:2px,color:#0f172a;
+
+    %% Nós do diagrama
+    Admin["<b>Administrador</b><br><br>- Acessa o painel<br>- Envia mídias<br>- Organiza playlists<br>- Publica conteúdos"]:::blueBox
+    Flask["<b>Servidor Flask</b><br><br>- Painel administrativo<br>- Rotas web<br>- API do player<br>- Gerencia mídias"]:::whiteBox
+    SQLite["<b>Banco SQLite</b><br><br>- Mídias publicadas<br>- Playlists<br>- Dados do sistema"]:::yellowBox
+    Rede["<b>Rede Local</b><br><br>- Comunicação interna<br>- Descoberta do servidor<br>- Sincronização automática<br>- Sem IP fixo no app"]:::greenBox
+    Player["<b>Player Android</b><br><br>- Flutter + WebView<br>- Busca servidor local<br>- Consulta conteúdos<br>- Exibe playlist"]:::whiteBox
+    TVs["<b>TVs e Monitores</b><br><br>- Exibem avisos<br>- Mostram imagens/vídeos<br>- Conteúdo institucional<br>- Uso no campus"]:::blueBox
+    Usuarios["<b>Usuários Finais</b><br><br>- Estudantes<br>- Professores<br>- Técnicos<br>- Visitantes"]:::whiteBox
+
+    %% Conexões
+    Admin -- "1. opera" --> Flask
+    Flask -- "salva" --> SQLite
+    Flask -- "2. API" --> Rede
+    Rede -- "3. sincroniza" --> Player
+    Player -- "4. exibe" --> TVs
+    TVs -- "visualizam" --> Usuarios
+```
