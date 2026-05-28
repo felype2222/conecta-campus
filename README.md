@@ -97,7 +97,7 @@ Para implantar o sistema de forma definitiva e segura no campus, recomenda-se a 
 
 1. **Servidor WSGI:** Utilize um servidor WSGI robusto (como `gunicorn` no Linux ou `waitress` no Windows) para rodar a aplicação através do arquivo `wsgi.py`.
 2. **Proxy Reverso:** Configure um proxy reverso (como Nginx ou Apache) na frente do servidor WSGI. Isso melhora o gerenciamento de requisições, serve arquivos estáticos (mídias) com mais eficiência e permite a configuração de certificados SSL/HTTPS.
-3. **VPN (Rede Virtual Privada):** Para evitar problemas de roteamento de IP e manter a segurança do sistema (evitando expor o painel à internet pública), recomenda-se interligar o servidor e as TV Boxes através de uma VPN (como ZeroTier, Tailscale ou OpenVPN). Isso cria uma rede local virtual segura, garantindo que a busca automática do player funcione perfeitamente, mesmo entre campi diferentes.
+3. **VPN (Rede Virtual Privada):** Para evitar problemas de roteamento de IP e manter a segurança do sistema (evitando expor o painel à internet pública), recomenda-se interligar o servidor e as TV Boxes através de uma VPN (como ZeroTier, Tailscale ou Wireguard). Isso cria uma rede local virtual segura, garantindo que a busca automática do player funcione perfeitamente, mesmo entre campi diferentes.
 
 ## Primeiro acesso
 
